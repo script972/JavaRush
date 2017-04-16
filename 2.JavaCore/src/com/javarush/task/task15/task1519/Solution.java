@@ -3,7 +3,6 @@ package com.javarush.task.task15.task1519;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
-import java.util.Scanner;
 
 /* 
 Разные методы для разных типов
@@ -12,23 +11,31 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) throws IOException {
         //напиште тут ваш код
-        BufferedReader scanner=new BufferedReader(new InputStreamReader(System.in));
-        String line;
-        while (true){
-            line=scanner.readLine();
-            if(line.equals("exit"))
-                break;
-            if(line.contains("."))
-                print((Double) Double.parseDouble(line)); else
-            if(Double.parseDouble(line)>0 && Double.parseDouble(line)<128)
-                print((short)Short.parseShort(line)); else
-            if(Double.parseDouble(line)>0 ||Double.parseDouble(line)>=128)
-                print(Integer.parseInt(line));else
-                    print((String) line);
+        try(BufferedReader reader = new BufferedReader(new InputStreamReader(System.in)))
+        {
+            while (true) {
+                String value = reader.readLine();
+                if (value.equals("exit")) break;
+                try {
+                    if (Integer.parseInt(value)>127 || Integer.parseInt(value)<1) print(Integer.parseInt(value));
+                    else print(Short.parseShort(value));
+                }
+                catch (Exception e1){
+                    try {
+                        print(Double.parseDouble(value));
+                    }
+                    catch (Exception e2){
+                        print(value);
+                    }
+                }
 
-
+            }
         }
-    }
+        catch (Exception e){
+            System.out.println(e.getMessage());
+        }//напиште тут ваш код
+        }
+
 
     public static void print(Double value) {
         System.out.println("Это тип Double, значение " + value);

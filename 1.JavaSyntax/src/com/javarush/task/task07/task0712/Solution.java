@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 /* 
@@ -14,18 +13,35 @@ import java.util.List;
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-        List<String>lis=new ArrayList<>();
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        ArrayList<String> list=new ArrayList<String>();
         for (int i = 0; i < 10; i++) {
-            lis.add(br.readLine());
+            list.add(br.readLine());
         }
-        String min=lis.get(0);
+        //find min/max
+        int min=list.get(0).length();
+        int minIndex=0;
+        int max=list.get(0).length();
+        int maxIndex=0;
 
-        for (String s:
-             lis) {
-            if(min.length()<s.length())
-                min=s;
+        for (int i = 0; i < list.size(); i++) {
+            if(min>list.get(i).length()) {
+                min = list.get(i).length();
+                minIndex=i;
+            }
+            if(max<list.get(i).length()) {
+                max = list.get(i).length();
+                maxIndex=i;
+            }
         }
-        System.out.println(min);
+        if(minIndex>maxIndex)
+            System.out.println(list.get(maxIndex));
+        else
+        {
+            System.out.println(list.get(minIndex));
+
+        }
+
+
     }
 }

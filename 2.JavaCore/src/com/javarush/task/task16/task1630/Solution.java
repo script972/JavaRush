@@ -2,24 +2,18 @@ package com.javarush.task.task16.task1630;
 
 import java.io.*;
 
-import static com.javarush.task.task16.task1628.Solution.reader;
-
 public class Solution {
     public static String firstFileName;
     public static String secondFileName;
-
-
     //add your code here - добавьте код тут
-    //2 пункт
     static {
-        BufferedReader reader1 = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
-            firstFileName = reader1.readLine();
-            secondFileName = reader1.readLine();
-            reader1.close();
-        } catch (IOException e) {
-            e.printStackTrace();
+            firstFileName = reader.readLine();
+            secondFileName = reader.readLine();
+            reader.close();
         }
+        catch (IOException e){e.printStackTrace();}
     }
     public static void main(String[] args) throws InterruptedException {
         systemOutPrintln(firstFileName);
@@ -29,9 +23,8 @@ public class Solution {
         ReadFileInterface f = new ReadFileThread();
         f.setFileName(fileName);
         f.start();
-        //add your code here - добавьте код тут
-        //4.1 пункт
         f.join();
+        //add your code here - добавьте код тут
         System.out.println(f.getFileContent());
     }
     public interface ReadFileInterface {
@@ -41,36 +34,35 @@ public class Solution {
         void start();
     }
     //add your code here - добавьте код тут
-    //3 пункт
-    public static class ReadFileThread extends Thread implements ReadFileInterface{
-        private String str;
-        StringBuilder builder = new StringBuilder();
-        //3.1 пункт
-        public void setFileName(String fullFileName){
-            str = fullFileName;
-        }
-        //3.2 пункт
-        public String getFileContent(){
+    public static class ReadFileThread extends Thread implements ReadFileInterface {
+        String filename, content = "";
+
+        @Override
+        public void run() {
             try {
-                return builder.toString().trim();
-            } catch (NullPointerException e) {
-                System.out.println(e);
-                return null;
+                BufferedReader reader = new BufferedReader(new FileReader(filename));
+                try {
+
+                    while (reader.ready()) {
+                        content += reader.readLine() + " ";
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
             }
         }
-        //3.3 пункт
-        public void run(){
-            StringBuilder builder = new StringBuilder();
 
-            try {
-                while ((str = reader.readLine()) != null) {
-                    if (str.trim().length() != 0 ) {
-                        builder.append(str.trim() + " ");
-                    }
-                }
-                reader.close();
-                str = builder.toString();
-            } catch (IOException e) {}
+        @Override
+        public void setFileName(String fullFileName) {
+            filename = fullFileName;
+        }
+
+        @Override
+        public String getFileContent() {
+            return content.trim();
         }
     }
 }
