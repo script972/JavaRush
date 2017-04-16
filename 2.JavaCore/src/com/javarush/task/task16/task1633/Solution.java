@@ -9,7 +9,11 @@ public class Solution {
         Thread threadA = new Thread(commonThread, "Нить 1");
         Thread threadB = new Thread(commonThread, "Нить 2");
 
+
+        threadA.setUncaughtExceptionHandler(handler);
         threadA.start();
+        threadB.setUncaughtExceptionHandler(handler);
+
         threadB.start();
 
         threadA.interrupt();
