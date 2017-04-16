@@ -12,6 +12,7 @@ public class Solution {
     }
 
     public interface ATableInterface {
+
         void setModel(List rows);
 
         String getHeaderText();
@@ -20,5 +21,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
+
+
     }
 }
