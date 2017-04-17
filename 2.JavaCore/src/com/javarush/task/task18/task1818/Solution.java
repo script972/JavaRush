@@ -5,6 +5,7 @@ package com.javarush.task.task18.task1818;
 */
 
 import java.io.*;
+import java.nio.Buffer;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
@@ -12,21 +13,21 @@ public class Solution {
         String filename1=bufferedReader.readLine();
         String filename2=bufferedReader.readLine();
         String filename3=bufferedReader.readLine();
-       /* BufferedReader file2=new BufferedReader(new FileReader(filename2));*/
-        FileOutputStream file1=new FileOutputStream(filename2);
-        FileInputStream file2=new FileInputStream(filename1);
-        while (file2.available()>0){
-            file1.write(file2.read());
-            file1.flush();
-        }
-        file2.close();
-        file1.close();
         bufferedReader.close();
-        FileOutputStream fileW1=new FileOutputStream(filename1);
-        FileInputStream file3=new FileInputStream(filename3);
-        while (file3.available()>0){
-            fileW1.write(file3.read());
+        FileInputStream fil2R=new FileInputStream(filename2);
+        FileOutputStream file1W=new FileOutputStream(filename1);
+        FileInputStream file3R=new FileInputStream(filename3);
+        while (fil2R.available()>0){
+            file1W.write(fil2R.read());
         }
+        file1W=new FileOutputStream(filename1, true);
+        while (file3R.available()>0){
+            file1W.write(file3R.read());
+        }
+        fil2R.close();
+        file1W.close();
+        file3R.close();
+
 
 
     }
