@@ -1,8 +1,5 @@
 package com.javarush.task.task19.task1916;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,12 +10,7 @@ import java.util.List;
 public class Solution {
     public static List<LineItem> lines = new ArrayList<LineItem>();
 
-    public static void main(String[] args) throws IOException {
-        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        String fileName1=br.readLine();
-        String fileName2=br.readLine();
-
-
+    public static void main(String[] args) {
     }
 
 
