@@ -1,2 +1,1 @@
-я - програ2ммист.
-Амиго
+counter,counter!counter.counter,counter.
