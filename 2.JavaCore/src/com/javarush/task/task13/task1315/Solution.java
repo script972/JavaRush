@@ -4,8 +4,7 @@ package com.javarush.task.task13.task1315;
 Dog, Cat и Mouse
 */
 
-import javafx.event.EventDispatchChain;
-import javafx.event.EventTarget;
+
 
 public class Solution {
     public static void main(String[] args) {
