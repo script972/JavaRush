@@ -5,7 +5,6 @@ public class User implements Cloneable {
     private final long id;
     private int level;
 
-
     public static final User NULL_USER = new User();
 
     public User(String name, long id, int level) {
