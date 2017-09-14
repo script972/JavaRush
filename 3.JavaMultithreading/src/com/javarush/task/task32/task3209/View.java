@@ -98,14 +98,17 @@ public class View extends JFrame implements ActionListener {
 
     }
 
-   /**//* public boolean canUndo() {
-        return undoManager.canUndo();
+    public boolean canUndo() {
+        //return undoManager.canUndo();
+        return false;
     }
 
     //Проверка возможности перейти на действие вперед
     public boolean canRedo() {
-        return undoManager.canRedo();
-    }*/
+        //return undoManager.canRedo();
+        return false;
+
+    }
 
     //отменяет последнее действие
     public void undo() {

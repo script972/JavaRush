@@ -23,7 +23,8 @@ public class TextEditMenuListener implements MenuListener {
         Component[] components = menu.getMenuComponents();
         for (Component component : components){
             component.setEnabled(view.isHtmlTabSelected());
-        }}
+        }
+    }
 
     @Override
     public void menuDeselected(MenuEvent menuEvent) {
