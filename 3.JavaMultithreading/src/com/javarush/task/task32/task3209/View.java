@@ -2,10 +2,12 @@ package com.javarush.task.task32.task3209;
 
 import com.javarush.task.task32.task3209.listeners.FrameListener;
 import com.javarush.task.task32.task3209.listeners.TabbedPaneChangeListener;
+import com.javarush.task.task32.task3209.listeners.UndoListener;
 
 import javax.swing.*;
 import javax.swing.undo.CannotRedoException;
 import javax.swing.undo.CannotUndoException;
+import javax.swing.undo.UndoManager;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -23,10 +25,9 @@ public class View extends JFrame implements ActionListener {
     private JTextPane htmlTextPane=new JTextPane();
     private JEditorPane plainTextPane=new JEditorPane();
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
+    private UndoManager undoManager=new UndoManager();
+    private UndoListener undoListener=new UndoListener(undoManager);
 
-    }
 
     public View() {
         try {
@@ -95,47 +96,55 @@ public class View extends JFrame implements ActionListener {
     }
 
     public void selectedTabChanged(){
-
+        switch (tabbedPane.getSelectedIndex()) {
+            case 0:
+                controller.setPlainText(plainTextPane.getText());
+                break;
+            case 1:
+                plainTextPane.setText(controller.getPlainText());
+                break;
+        }
+        resetUndo();
     }
 
     public boolean canUndo() {
-        //return undoManager.canUndo();
-        return false;
+        return undoManager.canUndo();
+        //return false;
     }
 
     //Проверка возможности перейти на действие вперед
     public boolean canRedo() {
-        //return undoManager.canRedo();
-        return false;
+        return undoManager.canRedo();
+        //return false;
 
     }
 
     //отменяет последнее действие
     public void undo() {
-       /* try {
+        try {
             undoManager.undo();
         } catch (CannotUndoException e) {
             ExceptionHandler.log(e);
-        }*/
+        }
     }
 
     //возвращает ранее отмененное действие
     public void redo() {
-       /* try {
+        try {
             undoManager.redo();
         } catch (CannotRedoException e) {
             ExceptionHandler.log(e);
-        }*/
+        }
     }
 
     // геттер для слушателя изменений
-  /*  public UndoListener getUndoListener() {
+    public UndoListener getUndoListener() {
         return undoListener;
-    }*/
+    }
 
     //должен сбрасывать все правки в менеджере
     public void resetUndo() {
-       // undoManager.discardAllEdits();
+       undoManager.discardAllEdits();
     }
 
     //должен возвращать true, если выбрана вкладка, отображающая html в панели вкладок
@@ -146,18 +155,42 @@ public class View extends JFrame implements ActionListener {
     // Выбирать html вкладку
     public void selectHtmlTab() {
         tabbedPane.setSelectedIndex(0);
-      //  resetUndo();
+        resetUndo();
 
     }
 
     // обновляет html страницу
     public void update() {
-      //  htmlTextPane.setDocument(controller.getDocument());
+        htmlTextPane.setDocument(controller.getDocument());
     }
 
     // "О программе"
     public void showAbout() {
         JOptionPane.showMessageDialog(getContentPane(), "It hard to be God", "Information", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        switch (e.getActionCommand()) {
+            case "Новый":
+                controller.createNewDocument();
+                break;
+            case "Открыть":
+                controller.openDocument();
+                break;
+            case "Сохранить":
+                controller.saveDocument();
+                break;
+            case "Сохранить как...":
+                controller.saveDocumentAs();
+                break;
+            case "Выход":
+                controller.exit();
+                break;
+            case "О программе":
+                showAbout();
+        }
     }
 
 

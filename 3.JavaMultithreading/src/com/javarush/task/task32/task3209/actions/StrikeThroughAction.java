@@ -7,9 +7,6 @@ import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledEditorKit;
 import java.awt.event.ActionEvent;
 
-/**
- * Created by script972 on 14.09.2017.
- */
 public class StrikeThroughAction extends StyledEditorKit.StyledTextAction {
 
     public StrikeThroughAction() {
