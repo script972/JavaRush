@@ -15,6 +15,18 @@ public class Order {
         this.dishes = ConsoleHelper.getAllDishesForOrder();
     }
 
+    public int getTotalCookingTime(){
+        int duration=0;
+        for (int i = 0; i < dishes.size(); i++) {
+            duration=duration+dishes.get(i).getDuration();
+        }
+        return duration;
+    }
+
+    public boolean isEmpty(){
+        return dishes.isEmpty();
+    }
+
     @Override
     public String toString() {
         return dishes.isEmpty() ? "" : "Your order: " + dishes + " of " + tablet;

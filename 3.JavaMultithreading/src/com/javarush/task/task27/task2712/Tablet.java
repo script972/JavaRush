@@ -2,7 +2,6 @@ package com.javarush.task.task27.task2712;
 
 import com.javarush.task.task27.task2712.kitchen.Dish;
 import com.javarush.task.task27.task2712.kitchen.Order;
-import sun.rmi.runtime.Log;
 
 import java.io.IOException;
 import java.util.List;
@@ -21,11 +20,10 @@ public class Tablet extends Observable{
     public Order createOrder(){
         Order order = null;
         try {
-
             order = new Order(this);
             setChanged();
-            notifyObservers(order);
-
+            if(!order.isEmpty())
+                notifyObservers(order);
         }catch (IOException e){
             logger.log(Level.SEVERE,"Console is unavailable.");
 
