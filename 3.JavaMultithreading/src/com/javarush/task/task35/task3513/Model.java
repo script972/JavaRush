@@ -2,12 +2,15 @@ package com.javarush.task.task35.task3513;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class Model {
 
     private static final int FIELD_WIDTH = 4;
 
     private Tile [][] gameTiles;
+
+    private Stack<Tile[][]> previousStates;
 
      int score;
      int maxTile;
@@ -22,6 +25,7 @@ public class Model {
             }
         }
         resetGameTiles();
+        this.previousStates = new Stack<Tile[][]>();
     }
 
     // вовзращает лист пустых клеток
@@ -116,6 +120,125 @@ public class Model {
             addTile();
         }
     }
+
+    // поворот матрицы на 90 градусов против часовой стрелки
+    void rotate() {
+        int len = FIELD_WIDTH;
+        for (int i = 0; i < len / 2; i++) // border -> center
+        {
+            for (int j = i; j < len - 1 - i; j++) // left -> right
+            {
+
+                Tile tmp = gameTiles[i][j];
+                gameTiles[i][j] = gameTiles[j][len - 1 - i];
+                gameTiles[j][len - 1 - i] = gameTiles[len - 1 - i][len - 1 - j];
+                gameTiles[len - 1 - i][len - 1 - j] = gameTiles[len - 1 - j][i];
+                gameTiles[len - 1 - j][i] = tmp;
+            }
+        }
+    }
+
+    void saveState(Tile[][] field) {
+        Tile[][] fieldToSave = new Tile[field.length][field[0].length];
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field[0].length; j++) {
+                fieldToSave[i][j] = new Tile(field[i][j].getValue());
+            }
+        }
+        previousStates.push(fieldToSave);
+        int scoreToSave = score;
+       // previousScores.push(scoreToSave);
+        //isSaveNeeded = false;
+    }
+
+
+
+    void up() {
+        saveState(this.gameTiles);
+        rotate();
+        left();
+        rotate();
+        rotate();
+        rotate();
+    }
+
+    void right() {
+        saveState(this.gameTiles);
+        rotate();
+        rotate();
+        left();
+        rotate();
+        rotate();
+    }
+
+    void down() {
+        saveState(this.gameTiles);
+        rotate();
+        rotate();
+        rotate();
+        left();
+        rotate();
+    }
+
+    public Tile[][] getGameTiles() {
+        return gameTiles;
+    }
+
+    // проверка возможности хода
+    public boolean canMove() {
+        if (!getEmptyTiles().isEmpty())
+            return true;
+        for (int i = 0; i < gameTiles.length; i++) {
+            for (int j = 1; j < gameTiles.length; j++) {
+                if (gameTiles[i][j].value == gameTiles[i][j - 1].value)
+                    return true;
+            }
+        }
+        for (int j = 0; j < gameTiles.length; j++) {
+            for (int i = 1; i < gameTiles.length; i++) {
+                if (gameTiles[i][j].value == gameTiles[i - 1][j].value)
+                    return true;
+            }
+        }
+        return false;
+    }
+
+    // откат на один ход назад
+    public void rollback() {
+        /*if (!previousStates.isEmpty() && !previousScores.isEmpty()) {
+            this.score = previousScores.pop();
+            this.gameTiles = previousStates.pop();
+        }*/
+    }
+
+    // делает ход в случайном направлении
+    public void randomMove() {
+        switch (((int) (Math.random() * 100)) % 4) {
+            case 0:
+                left();
+                break;
+            case 1:
+                up();
+                break;
+            case 2:
+                right();
+                break;
+            case 3:
+                down();
+                break;
+        }
+    }
+
+    public void autoMove() {
+       /* PriorityQueue<MoveEfficiency> queue = new PriorityQueue(4, Collections.reverseOrder());
+        queue.add(getMoveEfficiency(this::left));
+        queue.add(getMoveEfficiency(this::right));
+        queue.add(getMoveEfficiency(this::up));
+        queue.add(getMoveEfficiency(this::down));
+        Move move = queue.peek().getMove();
+        move.move();*/
+    }
+
 
 
 }
