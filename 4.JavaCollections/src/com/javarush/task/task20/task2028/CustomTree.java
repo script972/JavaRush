@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.AbstractList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 /* 
 Построй дерево(1)
@@ -84,5 +86,40 @@ public class CustomTree extends AbstractList implements Cloneable, Serializable 
     protected void removeRange(int fromIndex, int toIndex) {
         throw new UnsupportedOperationException();
         //super.removeRange(fromIndex, toIndex);
+    }
+
+    public boolean add(String element){
+        Entry<String> newElement = new Entry<>(element);
+        Queue<Entry<String>> queue = new ConcurrentLinkedQueue<>();
+        queue.add(root);
+        while (true) {
+            Entry<String> currentRoot = queue.remove();
+            // если находим локальный "корень" у которого нет 1 или 2=х "детей", то записываем
+            if (currentRoot.isAvailableToAddChildren()) {
+                elementAdd(currentRoot, newElement);
+                break;
+            } // если дети есть, то ставим их в очередь
+            else {
+                if (currentRoot.leftChild != null)
+                    queue.add(currentRoot.leftChild);
+                if (currentRoot.rightChild != null)
+                    queue.add(currentRoot.rightChild);
+            }
+        }
+        return true;
+    }
+    //проверяет наличие детей и запихивает туда, где их нет
+    public void elementAdd(Entry<String> currentRoot, Entry<String> currentElement){
+        if (currentRoot.availableToAddLeftChildren) {
+            currentElement.parent = currentRoot;
+            currentElement.lineNumber = currentRoot.lineNumber + 1;
+            currentRoot.leftChild = currentElement;
+        }
+        else if (currentRoot.availableToAddRightChildren){
+            currentElement.parent = currentRoot;
+            currentElement.lineNumber = currentRoot.lineNumber + 1;
+            currentRoot.rightChild = currentElement;
+        }
+        currentRoot.checkChildren();
     }
 }
