@@ -9,5 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="com.thoughtworks.binding:binding_2.10:10.0.2" level="project" />
     <orderEntry type="library" name="cd.connect.common:connect-java-jackson:1.1" level="project" />
+    <orderEntry type="library" name="org.slf4j:slf4j-api:1.7.23" level="project" />
   </component>
 </module>
