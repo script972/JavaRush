@@ -5,7 +5,7 @@ import com.javarush.task.task36.task3608.bean.User;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ModelData implements Model {
+public class ModelData  {
 
     private List<User> users=new ArrayList<>();
 
@@ -17,13 +17,5 @@ public class ModelData implements Model {
         this.users = users;
     }
 
-    @Override
-    public ModelData getModelData() {
-        return null;
-    }
 
-    @Override
-    public void loadUsers() {
-
-    }
 }
