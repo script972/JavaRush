@@ -67,7 +67,6 @@ public abstract class BaseObject {
         if (y > maxy) y = maxy;
     }
 
-
     public boolean isAlive() {
         return isAlive;
     }

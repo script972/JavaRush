@@ -18,8 +18,11 @@ public class Solution {
     }
 
     public static boolean isNormalLockOrder(final Solution solution, final Object o1, final Object o2) throws Exception {
-        //do something here
-        return false;
+        synchronized (o1){
+            synchronized (o2){
+                return true;
+            }
+        }
     }
 
     public static void main(String[] args) throws Exception {
