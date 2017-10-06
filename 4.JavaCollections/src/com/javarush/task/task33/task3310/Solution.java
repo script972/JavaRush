@@ -19,6 +19,8 @@ public class Solution {
         testStrategy(strategy4, 10);
         StorageStrategy strategy5=new HashBiMapStorageStrategy();
         testStrategy(strategy5, 10);
+        StorageStrategy strategy6=new DualHashBidiMapStorageStrategy();
+        testStrategy(strategy6, 10);
 
 
     }
