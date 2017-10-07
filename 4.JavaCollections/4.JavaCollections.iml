@@ -12,5 +12,6 @@
     <orderEntry type="library" name="org.slf4j:slf4j-api:1.7.23" level="project" />
     <orderEntry type="library" name="org.apache.commons:commons-collections4:4.0" level="project" />
     <orderEntry type="library" name="com.google.guava:guava:14.0" level="project" />
+    <orderEntry type="library" name="org.jsoup:jsoup:1.10.3" level="project" />
   </component>
 </module>
