@@ -3,6 +3,8 @@ package com.javarush.task.task28.task2810.model;
 import com.javarush.task.task28.task2810.vo.Vacancy;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,7 +15,8 @@ public class HHStrategy implements Strategy {
    // private static final String URL_FORMAT = "http://hh.ua/search/vacancy?";
    private static final String URL_FORMAT = "http://hh.ua/search/vacancy?text=java+%s&page=%d";
 
-   /* public List<Vacancy> getVacancies(String searchString)
+   @Override
+   public List<Vacancy> getVacancies(String searchString)
     {
         List<Vacancy> Vacancies = new ArrayList<>();
         int pageNum = 0;
@@ -46,7 +49,7 @@ public class HHStrategy implements Strategy {
             pageNum++;
         }
         return Vacancies;
-    }*/
+    }
 
 
 
