@@ -1,38 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/Aggregator.java" line="7" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/Aggregator.java" line="9" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_jsoup_jsoup_1_10_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/Aggregator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/Controller.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/model/HHStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/model/Provider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/model/Strategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/vo/Vacancy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task33/task3310/tests/SpeedTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3708/retrievers/CachingProxyRetriever.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3709/connectors/SecurityProxyConnector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3710/decorators/RedShapeDecorator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3711/Computer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3712/Game.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3714/Solution.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3714/Условие.jrtc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3804/ExceptionFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3811/Ticket.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task39/task3913/Event.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task39/task3913/LogParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task39/task3913/Solution.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task39/task3913/Status.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task39/task3913/logs/example.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task39/task3913/query/IPQuery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task39/task3913/Условие.jrtc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task33/task3310/Условие.jrtc" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task33/task3310/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/commons-collections4-4.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/guava-14.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jsoup-1.10.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task36/task3603/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task36/task3603/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task36/task3604/RedBlackTree.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task36/task3604/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task36/task3604/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task36/task3605/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task36/task3605/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3701/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3701/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3703/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3703/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3704/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3704/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3705/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3705/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3706/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3706/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3708/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3708/cache/LRUCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3708/retrievers/OriginalRetriever.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3708/retrievers/Retriever.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3708/storage/FarAwayStorage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3708/storage/Storage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3708/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3709/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3709/connectors/Connector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3709/connectors/SimpleConnector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3709/security/SecurityChecker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3709/security/SecurityCheckerImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3709/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3710/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3710/decorators/ShapeDecorator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3710/shapes/Circle.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3710/shapes/Rectangle.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3710/shapes/Shape.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3710/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3711/CPU.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3711/HardDrive.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3711/Memory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3711/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3711/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3712/Basketball.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3712/Football.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3712/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3712/Tennis.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3712/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3713/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3713/space/SpaceShip.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3713/space/crew/AbstractCrewMember.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3713/space/crew/CabinBoy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3713/space/crew/Captain.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3713/space/crew/Engineer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3713/space/crew/FirstMate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task37/task3713/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3801/NameChecker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3801/NameIsEmptyException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3801/NameIsNullException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3801/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3801/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3802/VeryComplexClass.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3802/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3803/VeryComplexClass.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3803/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3804/ExceptionApplicationMessage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3804/ExceptionDBMessage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3804/ExceptionUserMessage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3804/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3804/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3805/Connection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3805/ConnectionException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3805/ConnectionMock.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3805/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3805/SolutionException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3805/WrongDataException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3805/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3806/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3806/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3807/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3807/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3808/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3808/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3808/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3809/IncorrectAccount.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3809/JavaRushBankAccount.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3809/LongPositive.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3809/ReflectionAnnotationUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3809/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3809/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3810/Author.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3810/Changelog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3810/Date.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3810/Position.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3810/Revision.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3810/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3810/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3811/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3811/Условие.jrtc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3812/Fox.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3812/PrepareMyTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3812/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3812/SomeTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3812/Условие.jrtc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4.JavaCollections/4.JavaCollections.iml" afterPath="$PROJECT_DIR$/4.JavaCollections/4.JavaCollections.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaRushPlugin.properties" afterPath="$PROJECT_DIR$/JavaRushPlugin.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/Aggregator.java" afterPath="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/Aggregator.java" />
     </list>
     <ignored path="JavaRushTasks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,11 +144,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Aggregator.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Aggregator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/Aggregator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,7 +156,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Условие.jrtc" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Условие.jrtc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/Условие.jrtc">
           <provider selected="true" editor-type-id="EditorTypeId">
             <state />
@@ -200,11 +280,11 @@
         <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3812/SomeTest.java" />
         <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/task3812/PrepareMyTest.java" />
         <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task38/Aggregator.java" />
-        <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/Aggregator.java" />
         <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/Controller.java" />
         <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/model/Provider.java" />
         <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/vo/Vacancy.java" />
         <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/model/HHStrategy.java" />
+        <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/Aggregator.java" />
       </list>
     </option>
   </component>
@@ -1055,7 +1135,7 @@
       <workItem from="1507061466724" duration="5324000" />
       <workItem from="1507142279509" duration="7116000" />
       <workItem from="1507323372789" duration="5092000" />
-      <workItem from="1507357629886" duration="22102000" />
+      <workItem from="1507357629886" duration="22158000" />
     </task>
     <task id="LOCAL-00001" summary="2010 done">
       <created>1497300354476</created>
@@ -1351,15 +1431,21 @@
       <option name="project" value="LOCAL" />
       <updated>1507328224652</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="aggregator 5">
+      <created>1507395997648</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1507395997648</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="639996000" />
+    <option name="totallyTimeSpent" value="640052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1374,7 +1460,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328341" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27993527" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27993527" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928804" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328341" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1435,7 +1521,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ex &quot;restoran&quot; start 3" />
     <MESSAGE value="ex &quot;restoran&quot; start 8" />
     <MESSAGE value="systems digital" />
     <MESSAGE value="2048 3" />
@@ -1460,7 +1545,8 @@
     <MESSAGE value="mvc ready" />
     <MESSAGE value="Custom SET" />
     <MESSAGE value="14" />
-    <option name="LAST_COMMIT_MESSAGE" value="14" />
+    <MESSAGE value="aggregator 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggregator 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1968,19 +2054,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/Условие.jrtc">
+      <provider selected="true" editor-type-id="EditorTypeId">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/Aggregator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task28/task2810/Условие.jrtc">
-      <provider selected="true" editor-type-id="EditorTypeId">
-        <state />
       </provider>
     </entry>
   </component>
